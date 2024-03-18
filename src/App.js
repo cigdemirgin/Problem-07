@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-
+// imageSrc ve name öğelerini prop olarak geçirin
 function Avatar({ width, height, name, profileText }) {
   return (
     <div className="group block p-8 flex-shrink-0">
@@ -35,6 +35,12 @@ export default function App() {
         name="Tom Cook"
         width={500}
         height={500}
+      />
+      <Avatar
+       profileText="Profile bakın"
+       name="John Cook"
+       width={500}
+       height={500}
       />
     </>
   );
